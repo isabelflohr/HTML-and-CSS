@@ -1,0 +1,13 @@
+table {
+    border: 3px dotted deeppink;
+}
+td:hover{
+    background-color: lightgray;
+    color: black;
+}
+tr,th {
+    background-color: midnightblue;
+}
+tr,td {
+    color:white;
+}
