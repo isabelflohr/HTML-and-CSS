@@ -18,8 +18,8 @@ h1 {
 
 /* SELECT ALL SQUARES IN THE ARRAY */
 
-.container.squares:nth-child(-n+4) {
-    background-image: url("./smileyface2.png");
+.container .squares:nth-child(-n+4) {
+    background-image: url("smileyface2.png");
     color: #fff;
     float: left;
     width: 100px;
