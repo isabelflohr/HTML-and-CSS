@@ -3,9 +3,9 @@ body {
 }
 
 h1 {
-    color: rgba(8,141,165,1);
-    margin-left: 1100px;
-    text-shadow: 1px .5px 4px rgba(0,0,0,0);
+    color: pink;
+    margin-left: 100px;
+    text-shadow: 1px .5px 4px rgba(0,0,0,.6);
 }
 
 .container {
@@ -18,13 +18,13 @@ h1 {
 
 /* SELECT ALL SQUARES IN THE ARRAY */
 
-.container .squares:nth-child(-n+4) {
-    background-image: url("..//")
+.container.squares:nth-child(-n+4) {
+    background-image: url("./smileyface2.png");
     color: #fff;
     float: left;
     width: 100px;
-    height: 100px
-    margin: 5px
+    height: 100px;
+    margin: 5px;
     border: 1px solid black;
     border-radius: 25%;
     cursor: pointer;
