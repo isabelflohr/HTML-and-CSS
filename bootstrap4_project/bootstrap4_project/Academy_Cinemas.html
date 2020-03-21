@@ -32,13 +32,17 @@
               </form>
             </div>
           </nav>
-
+          <!-- JUMBOTRON HEADING -->
           <div class="jumbotron jumbotron-fluid bg-info text-center"  id="about">
             <div class="container">
               <h1 class="display-4 text-light">Academy Cinemas</h1>
               <p class="lead text-light">Sit back, relax, and enjoy the show...</p>
+              <!-- MOVIE DEALS -->
+              <button type="button" data-toggle="modal" class="btn btn-outline-primary" data-target="#register">See our monthly movie deals</button>
+              <!-- END MOVIE DEALS -->
             </div>
           </div>
+          <!-- END JUMBOTRON HEADING -->
 
           <div class="container">
             <div class="row">
@@ -130,6 +134,51 @@
           </div>
 <!-- END SIGN-UP FORM -->
 
+<!-- FORM MODAL -->
+          <div class="modal" id="register" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Register to recieve movie deal</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                <form>
+                  <fieldset class="form-group">
+                    <input class="form-control" id="firstname" type="text"  placeholder="First Name...">
+                    <label for="firstname">First Name:</label>
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <input class="form-control" id="lastname" type="text"  placeholder="Last Name...">
+                    <label for="lastname">Last Name:</label>
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <input class="form-control" id="email" type="text"  placeholder="Email...">
+                    <label for="email">Email:</label>
+                  </fieldset>
+                  <fieldset class="form-group">
+                    <input class="form-control" id="password" type="text"  placeholder="Password...">
+                    <label for="password">Password:</label>
+                  </fieldset>        
+                </form>
+                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                  <strong>Check Out This SWEET Deal!</strong> Kids get in free on every second Tuesday of the month! See details below*.
+                </div>
+
+
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- END FORM MODAL -->
+
 <!-- FOOTER -->
           <div class="container my-5">
               <ul class="nav nav-inline">
@@ -143,8 +192,11 @@
                   <small><a class="nav-link active" href="#">Info@academycinemas.com</a></small>
                 </li>
                 <li class="nav-item">
+                  <small><a class="nav-link active" href="#">*Kids must have guadian over 18 Y/O with them. The guardian must purchase one ticket of their own. Valid 1 per child every Tuesday*</a></small>
+                </li>
+                <li class="nav-item">
                   <small><a class="nav-link active" href="#">&copy;2019 Academy Cinemas&reg;</a></small>
-                 </li>
+                </li>
               </ul>
           </div>
     </div>
