@@ -1,18 +1,33 @@
 <!DOCTYPE html>
-<html>
-<script> src="Basic_JavaScript_1.js"</script>
+<html lang="eng">
+<head>
+        <title>Tester Page</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Basic_CSS_FadeIn.css">
+        <script> src="Basic_JavaScript_1.js"</script>
+        <script>document.body.className += ' fade-out';</script>
+</head>
+<body>
+       
+        $(function() {
+                $('body').removeClass('fade-out');
+            });
+
+<h1 style="font-size:7vw;">Jellyfish</h1>
+<p style="font-size:3vw;">Jellyfish are freeswimming marine animals. They are umbrella shaped bells with trailing tentacles.</p>
 <p>
         <b><font color="yellow" font face="arial" font size="7"
         >Paragraph one of three</font></b>
 </p>
 <p>
-        <i><font color="green" font face="arial" font size="4"
+        <i><font color="green" font face="arial" font size="6"
         >Paragraph two of three</font></i>
 </p>
 <p>
-        <u><font color="CC7AF5" font face="arial" font size="1"
+        <u><font color="CC7AF5" font face="arial" font size="5"
         >Paragraph three of three</font></u>
 </p>
-<image src="moon-jellyfish.jpg" height="300" width="300"
+<image src="moon-jellyfish.jpg" height="500" width="700"
  alt="small jellyfish floating in the sea"></image>
+</body>
 </html>
