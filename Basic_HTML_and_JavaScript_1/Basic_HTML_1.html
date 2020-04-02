@@ -4,30 +4,76 @@
         <title>Tester Page</title>
         <meta charset="utf-8">
         <link rel="stylesheet" href="Basic_CSS_FadeIn.css">
-        
-        <script>document.body.className += ' fade-in';</script>
+        <script src="JSvalidation_form.js"></script>
+        <script>' fade-in';</script>
 </head>
-<body>
-       
-        $(function() {
-                $('body').removeClass('fade-in');
-            });
 
-<h1 style="font-size:7vw;">Jellyfish</h1>
+<body class="fade-in">
+
+<div>
+<h1 style="font-size:3vw;">Enter your cell phone number to receive texts about random Jellyfish facts!</h1>
+<form class="formC" name="phoneNum" action="" onsubmit="return validateForm()" method="post">
+        <input type="text" id="phonenum" name="phonenum"><br>
+        <input type="submit" value="Submit">
+
+</form>
+</div>
+
+<!-- SLIDESHOW CONTAINER -->
+<div class="slideshow-container">
+        <!-- IMAGES W/ NUMBERS AND TEXT -->
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="jelly1.jpg" style="width:100%">
+                    </div>
+        
+                    <div class="mySlides fade">
+                        <div class="numbertext2">2 / 4</div>
+                        <img src="jelly2.jpg" stype="width:100%">
+                    </div>
+        
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="jelly3.jpg" style="width:100%">
+                    </div>
+</div>
+<!-- DOTS -->
+                <div style="text-align: center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+</div>
+
+<br>
+
+<h1 style="font-size:7vw;"><u>Jellyfish</h1></u>
 <p style="font-size:3vw;">Jellyfish are freeswimming marine animals. They are umbrella shaped bells with trailing tentacles.</p>
 <p>
-        <b><font color="yellow" font face="arial" font size="7"
-        >Paragraph one of three</font></b>
+        <a href="https://www.natgeokids.com/nz/discover/animals/sea-life/jellyfish-facts/" target="_blank"><b><font color="yellow" font face="arial" font size="6"
+        >Many species of jellyfish live in oceans all around the world. Click me for more facts on jellies!</font></b></a>
 </p>
 <p>
         <i><font color="green" font face="arial" font size="6"
-        >Paragraph two of three</font></i>
+        >Some jellyfish are bioluminecent, meaning they glow!</font></i>
 </p>
 <p>
         <u><font color="CC7AF5" font face="arial" font size="5"
-        >Paragraph three of three</font></u>
+        >CLICK THE PICTURE!</font></u>
 </p>
-<image src="moon-jellyfish.jpg" height="500" width="700"
- alt="small jellyfish floating in the sea"></image>
+
+<button class="open-button" onclick="openForm()"><image src="moon-jellyfish.jpg" height="500" width="700"
+alt="small jellyfish floating in the sea"></image></button>
+<div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Enter your email to receive random Jellyfish facts in your inbox!</h1>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <button type="submit" class="btn">Email Me!</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+        </form>
+</div>
+
 </body>
 </html>

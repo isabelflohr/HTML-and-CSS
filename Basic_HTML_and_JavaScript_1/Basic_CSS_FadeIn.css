@@ -1,13 +1,214 @@
-body {
-    opacity: 0;
-    transition: 1s opacity;
+.fade-in {
+    animation: fadeIn ease 1s;
+    -webkit-animation: fadeIn ease 1s;
+    -moz-animation: fadeIn ease 1s;
+    -o-animation: fadeIn ease 1s;
+    -ms-animation: fadeIn ease 1s;
 }
-
-body.fade-out {
-    opacity:0;
-    transition: none;
+@keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
 }
-
 html {
     background-color: lightblue;
+    scroll-behavior: smooth;
+}
+
+/* ADD FORM CONTAINER STYLE */
+.formC {
+    max-width: 275px;
+    padding: 10px;
+    background-color:lightblue;
+}
+
+/* WHEN INPUTS GET FOCUS, DO SOMETHING */
+.form-container input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* POPUP FORM HIDDDEN BY DEFAULT */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/* ADD FORM CONTAINER STYLE */
+.form-container {
+    max-width: 600px;
+    padding: 10px;
+    background-color: white;
+}
+
+/* FULL WIDTH INPUT FEILDS */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+  }
+
+/* STYLE FOR EMAIL BUTTON */
+.form-container .btn {
+    background-color: darkviolet;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+  
+/* BACKGROUND COLOR FOR CLOSE BUTTON */
+.form-container .cancel {
+    background-color: darkviolet;
+}
+  
+/* BUTTON HOVER EFFECTS */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+/* KEYFRAMES */
+@keyframes mymove {
+    0%   {top: 0px; width: 250px; background:darkviolet;}
+    100%   {top: 60px; width: 300px; background:darkviolet;}
+}
+
+.formC {
+    width: 275px;
+    height: 100px;
+    background: darkviolet;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+@keyframes zoominoutsinglefeatured {
+    0% {
+        transform: scale(1,1);
+    }
+    50% {
+        transform: scale(1.2,1.2);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+.open-button {
+	animation: zoominoutsinglefeatured 10s forwards;
+}
+
+* {box-sizing:border-box}
+
+/* SLIDESHOW CONTAINER */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* HIDE IMAGES BY DEFAULT */
+.mySlides {
+    display: none;
+}
+
+/* CAPTION TEXT */
+.text {
+    color: #f2f2f2;
+    font-size: 25px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* NUMBER TEXT */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* DOTS/PLACE INDICATORS */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2ox;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6 s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* FADING ANIMATION */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5;
+}
+
+@-webkit-keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
 }
