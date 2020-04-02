@@ -1,3 +1,4 @@
+/* FADE IN */
 .fade-in {
     animation: fadeIn ease 1s;
     -webkit-animation: fadeIn ease 1s;
@@ -53,8 +54,12 @@ html {
     background-color: lightblue;
     scroll-behavior: smooth;
 }
+/* END FADE IN */
 
-/* ADD FORM CONTAINER STYLE */
+
+
+/* POPUP FORM FROM JELLY PIC */
+/* FORM CONTAINER STYLE */
 .formC {
     max-width: 275px;
     padding: 10px;
@@ -120,9 +125,13 @@ html {
     0%   {top: 0px; width: 250px; background:darkviolet;}
     100%   {top: 60px; width: 300px; background:darkviolet;}
 }
+/* END POPUP FORM FROM JELLY PIC */
 
+
+
+/* MOVING FORM */
 .formC {
-    width: 275px;
+    width: 300px;
     height: 100px;
     background: darkviolet;
     position: relative;
@@ -140,13 +149,21 @@ html {
         transform: scale(1,1);
     }
 }
+/* END MOVING FORM */
 
+
+
+/* ZOOM ON JELLY PIC */
 .open-button {
 	animation: zoominoutsinglefeatured 10s forwards;
 }
 
 * {box-sizing:border-box}
+/* END ZOOM ON JELLY PIC */
 
+
+
+/* SLIDESHOW */
 /* SLIDESHOW CONTAINER */
 .slideshow-container {
     max-width: 1000px;
@@ -157,17 +174,6 @@ html {
 /* HIDE IMAGES BY DEFAULT */
 .mySlides {
     display: none;
-}
-
-/* CAPTION TEXT */
-.text {
-    color: #f2f2f2;
-    font-size: 25px;
-    padding: 8px 12px;
-    position: absolute;
-    bottom: 8px;
-    width: 100%;
-    text-align: center;
 }
 
 /* NUMBER TEXT */
@@ -212,3 +218,19 @@ html {
     from {opacity: .4}
     to {opacity: 1}
 }
+/* END SLIDESHOW */
+
+
+
+/* STICKY */
+div.sticky {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: lightgreen;
+    padding: 30px;
+    font-size: 40px;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
